@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/store?userUnicode=true&characterEncoding=utf-8&
+      &serverTimeZone=UTC&useSSL=false
+    username: root
+    password: zwh
+    driver-class-name: com.mysql.jdbc.Driver
+  servlet:
+    multipart:
+#      最大上传文件大小
+      max-file-size: 10MB
+#      最大请求大小（包含请求头等）
+      max-request-size: 15MB
+user.address.max-count: 20
+#指定mapper映射文件路径，映射文件与接口路径相同可以省略
+#mybatis:
+#  mapper-locations: classpath:mapper/*.xml
+
+#    type: com.alibaba.druid.pool.DruidDataSource
